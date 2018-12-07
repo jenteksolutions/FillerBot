@@ -1,6 +1,6 @@
 // Adding Libraries
 // Adding a comment to check the Git
-//New Comment
+//New Comment 01 added
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <MCUFRIEND_kbv.h>   // Hardware-specific library
 MCUFRIEND_kbv tft;
@@ -233,6 +233,11 @@ void def() {
 
   tft.drawFastHLine(30, 60, 170, BLACK);
   tft.drawFastHLine(30, 180, 170, BLACK);
+}
+// Clean the machine
+void cleanMachine() {
+  digitalWrite(solonoid, LOW);
+  
 }
 String enterNum(char customKey) {
 
